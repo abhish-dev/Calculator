@@ -2,44 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator by Abhi-Dev</title> <!-- Make sure the title is correct here -->
+    <link rel="stylesheet" href="style.css"> <!-- Ensure the correct path to your CSS file -->
 </head>
 <body>
-    <div class="container">
-        <form action="" class="calculator" name="calc">
-            <input type="text" readonly class="value" name="txt"/>
-            <span class="num clear" onclick="calc.txt.value = ''">c</span>
-            <span class="num" onclick="document.calc.txt.value +='/'">/</span>
-            <span class="num" onclick="document.calc.txt.value +='*'">*</span>
-            <span class="num" onclick="document.calc.txt.value +='7'">7</span>
-            <span class="num" onclick="document.calc.txt.value +='8'">8</span>
-            <span class="num" onclick="document.calc.txt.value +='9'">9</span>
-            <span class="num" onclick="document.calc.txt.value +='-'">-</span>
-            <span class="num" onclick="document.calc.txt.value +='4'">4</span>
-            <span class="num" onclick="document.calc.txt.value +='5'">5</span>
-            <span class="num" onclick="document.calc.txt.value +='6'">6</span>
-            <span class="num plus" onclick="document.calc.txt.value +='+'">+</span>
-            <span class="num" onclick="document.calc.txt.value +='1'">1</span>
-            <span class="num" onclick="document.calc.txt.value +='2'">2</span>
-            <span class="num" onclick="document.calc.txt.value +='3'">3</span>
-            <span class="num" onclick="document.calc.txt.value +='0'">0</span>
-            <span class="num" onclick="document.calc.txt.value +='00'">00</span>
-            <span class="num" onclick="document.calc.txt.value +='.'">.</span>
-            <span class="num equal" onclick="document.calc.txt.value =eval(calc.txt.value)">=</span>
-        </form>
-        <p>Created with ❤️ by Abhi Singh </p>
+    <div class="wrap">
+        <div class="cal">
+            <ul class="ctrls">
+                <li class="close"><a href="#"></a></li>
+                <li class="min"><a href="#"></a></li>
+                <li class="max"><a href="#"></a></li>
+            </ul>
+            <span class="title">Calculator by Abhi-Dev</span>
+            <div class="screen">0</div> <!-- Make sure this shows the initial content correctly -->
+            <input type="hidden" class="outcome" value="" />
+            <ul class="buttons">
+                <li><a class="clear" href="#">C</a></li>
+                <li><a class="val" href="-">±</a></li>
+                <li><a class="val" href="/">÷</a></li>
+                <li><a class="val" href="*">×</a></li>
+                <li><a class="val" href="7">7</a></li>
+                <li><a class="val" href="8">8</a></li>
+                <li><a class="val" href="9">9</a></li>
+                <li><a class="val" href="-">-</a></li>
+                <li><a class="val" href="4">4</a></li>
+                <li><a class="val" href="5">5</a></li>
+                <li><a class="val" href="6">6</a></li>
+                <li><a class="val" href="+">+</a></li>
+                <li><a class="val" href="1">1</a></li>
+                <li><a class="val" href="2">2</a></li>
+                <li><a class="val" href="3">3</a></li>
+                <li><a class="equal tall" href="#">=</a></li>
+                <li><a class="val wide shift" href="0">0</a></li>
+                <li><a class="val shift" href=".">.</a></li>
+            </ul>
+        </div>
     </div>
-    <script type="text/javascript" src="vanilla-tilt.js"></script>
-<script type="text/javascript">
-	VanillaTilt.init(document.querySelector(".container"), {
-		max: 25,
-		speed: 400,
-        glare: true,
-        "max-glare":0.2,
-	});
-    </script>
+
+    <script src="script.js"></script> <!-- Ensure the correct path to your JS file -->
 </body>
 </html>
