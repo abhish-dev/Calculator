@@ -1,5 +1,3 @@
-
-
 $(function(){
 
     // when a value is clicked
