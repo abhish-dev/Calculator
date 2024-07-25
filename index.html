@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title> 
-    <link rel="stylesheet" href="style.css"> 
+    <title>Calculator by Abhi-Dev</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery -->
 </head>
 <body>
     <div class="wrap">
@@ -15,13 +16,13 @@
                 <li class="max"><a href="#"></a></li>
             </ul>
             <span class="title">Calculator by Abhi-Dev</span>
-            <div class="screen">0</div> <!-- Make sure this shows the initial content correctly -->
-            <input type="hidden" class="outcome" value="" />
+            <div class="screen">2+2</div>
+            <input type="hidden" class="outcome" value="2+2" />
             <ul class="buttons">
-                <li><a class="clear" href="#">C</a></li>
-                <li><a class="val" href="-">±</a></li>
-                <li><a class="val" href="/">÷</a></li>
-                <li><a class="val" href="*">×</a></li>
+                <li><a class="clear">C</a></li>
+                <li><a class="val" href="-">&plusmn;</a></li>
+                <li><a class="val" href="/">&divide;</a></li>
+                <li><a class="val" href="*">&times;</a></li>
                 <li><a class="val" href="7">7</a></li>
                 <li><a class="val" href="8">8</a></li>
                 <li><a class="val" href="9">9</a></li>
@@ -33,13 +34,12 @@
                 <li><a class="val" href="1">1</a></li>
                 <li><a class="val" href="2">2</a></li>
                 <li><a class="val" href="3">3</a></li>
-                <li><a class="equal tall" href="#">=</a></li>
+                <li><a class="equal tall">=</a></li>
                 <li><a class="val wide shift" href="0">0</a></li>
                 <li><a class="val shift" href=".">.</a></li>
             </ul>
         </div>
     </div>
-
-    <script src="script.js"></script> <!-- Ensure the correct path to your JS file -->
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>
